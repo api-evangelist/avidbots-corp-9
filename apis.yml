@@ -1,23 +1,68 @@
 aid: avidbots-corp-9
+
 name: Avidbots Corp.
-description: 'Avidbots Corp. is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://avidbots.com/assets/Meta-Data-Images/AVD-310-WEB_Standard.png
+
+description: 'Avidbots Corp. designs and manufactures autonomous floor cleaning robots for commercial and industrial environments. Their solutions include the Neo, Neo 2W, and Kas robots, which provide autonomous navigation, mapping, and cleaning capabilities, reducing labor costs and improving cleanliness across warehouses, retail, healthcare, and other facilities. The company offers a cloud‑based command center for fleet management and analytics, supporting scalable deployment and integration with existing facility operations.'
+
 url: https://raw.githubusercontent.com/api-evangelist/avidbots-corp-9/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Robotics
+- Autonomous
+- Cleaning
+- Industrial
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/avidbots-corp-9-hosts.yml
+- type: PrivacyPolicy
+  url: https://avidbots.com/privacy-policy
+- type: Newsroom
+  url: https://avidbots.com/news/
+- type: Blog
+  url: https://avidbots.com/resources/blog/
+- type: Documentation
+  url: https://dev.avidbots.com/
+- type: DomainSecurity
+  url: security/avidbots-corp-9-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/avidbots-corp-9_stock/
+  url: https://avidbots.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public developer program or API documentation was found on the company website.
+  evidence:
+    - url: https://avidbots.com
+      status: 200
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
